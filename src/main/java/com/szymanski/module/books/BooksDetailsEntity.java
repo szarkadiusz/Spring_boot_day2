@@ -11,6 +11,11 @@ public class BooksDetailsEntity {
     private Long id;
     private String isbn;
     private String publisher;
+    private String lang;
+
+    public String getLang() {
+        return lang;
+    }
 
     public Long getId() {
         return id;
