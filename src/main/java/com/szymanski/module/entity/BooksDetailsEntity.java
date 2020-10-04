@@ -1,4 +1,4 @@
-package com.szymanski.module.books;
+package com.szymanski.module.entity;
 
 import javax.persistence.*;
 
