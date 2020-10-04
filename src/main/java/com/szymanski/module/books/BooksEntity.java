@@ -14,6 +14,20 @@ public class BooksEntity {
     private String author;
     @NotNull (message = "Co Tyo robisz ?nie moze byc puste  title")
     private String title;
+
+    @OneToOne (cascade = CascadeType.ALL)
+    @JoinColumn(name = "details_id", referencedColumnName = "id")
+    private BooksDetailsEntity details;
+
+    public BooksEntity setDetails(BooksDetailsEntity details) {
+        this.details = details;
+        return this;
+    }
+
+    public BooksDetailsEntity getDetails() {
+        return details;
+    }
+
     public Long getId() {
         return id;
     }
