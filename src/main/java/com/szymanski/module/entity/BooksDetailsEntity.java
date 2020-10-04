@@ -11,6 +11,27 @@ public class BooksDetailsEntity {
     private Long id;
     private String isbn;
     private String publisher;
+
+    public BooksDetailsEntity setId(Long id) {
+        this.id = id;
+        return this;
+    }
+
+    public BooksDetailsEntity setIsbn(String isbn) {
+        this.isbn = isbn;
+        return this;
+    }
+
+    public BooksDetailsEntity setPublisher(String publisher) {
+        this.publisher = publisher;
+        return this;
+    }
+
+    public BooksDetailsEntity setLang(String lang) {
+        this.lang = lang;
+        return this;
+    }
+
     private String lang;
 
     public String getLang() {

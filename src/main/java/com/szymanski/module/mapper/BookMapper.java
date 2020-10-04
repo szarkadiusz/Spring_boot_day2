@@ -12,7 +12,9 @@ public class BookMapper {
     public static BookDto map (BooksEntity entity){
         return new BookDto()
                 .setAuthor(entity.getAuthor())
-                .setTitle(entity.getTitle());
+                .setTitle(entity.getTitle())
+                .setDetails(BookDetailsMapper.map(entity.getDetails()))
+                ;
     }
 
     public static List<BookDto> map(List<BooksEntity> entities){

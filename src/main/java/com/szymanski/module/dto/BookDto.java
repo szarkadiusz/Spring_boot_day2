@@ -3,6 +3,18 @@ package com.szymanski.module.dto;
 public class BookDto {
 
     private int id;
+    private String author;
+    private String title;
+    private BookDetailsDto details;
+
+    public BookDetailsDto getDetails() {
+        return details;
+    }
+
+    public BookDto setDetails(BookDetailsDto details) {
+        this.details = details;
+        return this;
+    }
 
     public int getId() {
         return id;
@@ -13,8 +25,6 @@ public class BookDto {
         return this;
     }
 
-    private String author;
-    private String title;
 
     public String getAuthor() {
         return author;
