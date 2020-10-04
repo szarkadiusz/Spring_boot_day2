@@ -1,4 +1,4 @@
-package com.szymanski.module.home;
+package com.szymanski.module.books.home;
 
 import org.springframework.stereotype.Service;
 

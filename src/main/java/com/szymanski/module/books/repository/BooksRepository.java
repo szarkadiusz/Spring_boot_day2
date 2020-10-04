@@ -1,6 +1,6 @@
-package com.szymanski.module.books;
+package com.szymanski.module.books.repository;
 
-import com.szymanski.module.entity.BooksEntity;
+import com.szymanski.module.books.entity.BooksEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 

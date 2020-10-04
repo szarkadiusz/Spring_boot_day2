@@ -1,4 +1,6 @@
-package com.szymanski.module.dto;
+package com.szymanski.module.books.dto;
+
+import java.util.Set;
 
 public class BookDto {
 
@@ -6,6 +8,16 @@ public class BookDto {
     private String author;
     private String title;
     private BookDetailsDto details;
+    private Set<String> tags;
+
+    public Set<String> getTags() {
+        return tags;
+    }
+
+    public BookDto setTags(Set<String> tags) {
+        this.tags = tags;
+        return this;
+    }
 
     public BookDetailsDto getDetails() {
         return details;

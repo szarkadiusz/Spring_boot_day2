@@ -1,4 +1,4 @@
-package com.szymanski.module.dto;
+package com.szymanski.module.books.dto;
 
 public class BookDetailsDto {
 

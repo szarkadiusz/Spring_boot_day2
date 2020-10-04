@@ -1,8 +1,7 @@
-package com.szymanski.module.mapper;
+package com.szymanski.module.books.mapper;
 
-import com.szymanski.module.dto.BookDto;
-import com.szymanski.module.entity.BooksDetailsEntity;
-import com.szymanski.module.entity.BooksEntity;
+import com.szymanski.module.books.dto.BookDto;
+import com.szymanski.module.books.entity.BooksEntity;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -14,6 +13,7 @@ public class BookMapper {
                 .setAuthor(entity.getAuthor())
                 .setTitle(entity.getTitle())
                 .setDetails(BookDetailsMapper.map(entity.getDetails()))
+                .setTags(BookTagsMapper.map(entity.getTags()))
                 ;
     }
 

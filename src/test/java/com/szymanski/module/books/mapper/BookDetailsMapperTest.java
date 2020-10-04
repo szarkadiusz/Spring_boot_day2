@@ -1,15 +1,13 @@
-package com.szymanski.module.mapper;
+package com.szymanski.module.books.mapper;
 
-import com.szymanski.module.dto.BookDetailsDto;
-import com.szymanski.module.entity.BooksDetailsEntity;
+import com.szymanski.module.books.dto.BookDetailsDto;
+import com.szymanski.module.books.entity.BooksDetailsEntity;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.assertj.core.api.Assertions.assertThat;
-
-import static org.junit.Assert.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class BookDetailsMapperTest {
