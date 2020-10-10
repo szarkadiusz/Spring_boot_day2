@@ -7,6 +7,30 @@
           href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
-<p><h1><span th:text="${greetings}"></span></h1></p>
+<p>
+<h1><span th:text="${greetings}"></span></h1></p>
+
+<section th:if="${poseidonConfig}">
+    <h1>Config</h1>
+    <p>
+        AWS region: <span th:text="${awsRegion}"></span>
+    </p>
+    <p>
+        Env: <span th:text="${poseidonConfig.env}"></span>
+    </p>
+
+    <p>
+        Domain: <span th:text="${poseidonConfig.domain}"></span>
+    </p>
+    <p>
+        Themes: <span th:text="${poseidonConfig.themes}"></span>
+    </p>
+    <p>
+        Admin Email: <span th:text="${poseidonConfig.adminEmail}"></span>
+    </p>
+    <p>
+        Admin Phone: <span th:text="${poseidonConfig.adminPhone}"></span>
+    </p>
+</section>
 </body>
 </html>
