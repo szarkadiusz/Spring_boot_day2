@@ -1,7 +1,8 @@
 package com.szymanski.module.books.dto;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Set;
-
+@XmlRootElement
 public class BookDto {
 
     private int id;
